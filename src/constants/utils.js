@@ -1,1 +1,1 @@
-export const API_URL ="https://expensetracker-ywb8.onrender.com/"
+export const API_URL ="https://expensetracker-ywb8.onrender.com"
