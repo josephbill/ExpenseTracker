@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import axios from 'axios'
-import { API_URL } from '../constants/utils'
+import { API_URL } from '../constants/utility'
 
 
 function ExpenseDetail() {
@@ -13,7 +13,7 @@ function ExpenseDetail() {
   useEffect(() => {
     const fetchExpense = async () => {
       try {
-        const response = await axios.get(`${`${API_URL}`}/api/expenses/${id}`)
+        const response = await axios.get(`${API_URL}/api/expenses/${id}`)
         setExpense(response.data)
       } catch (err) {
         setError(err.message)

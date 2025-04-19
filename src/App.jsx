@@ -4,7 +4,6 @@ import Dashboard from './pages/Dashboard'
 import AddExpense from './pages/AddExpense'
 import ExpenseDetail from './pages/ExpenseDetail'
 import EditExpense from './pages/EditExpense'
-import TransactionDashboard from './components/UserList'
 
 function App() {
   return (

@@ -2,8 +2,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import ExpenseForm from '../components/ExpenseForm'
-import {API_URL} from '../constants/utils'
-
+import { API_URL } from '../constants/utility'
 function AddExpense() {
   const navigate = useNavigate()
   const [expense, setExpense] = useState({

@@ -2,7 +2,9 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import ExpenseList from '../components/ExpenseList'
 import axios from 'axios'
-import { API_URL } from '../constants/utils'
+import { API_URL } from '../constants/utility'
+
+
 function Dashboard() {
   const [expenses, setExpenses] = useState([])
   const [loading, setLoading] = useState(true)
@@ -12,8 +14,6 @@ function Dashboard() {
     const fetchExpenses = async () => {
       try {
         const response = await axios.get(`${API_URL}/api/expenses`)
-        console.log(`${API_URL}/api/expenses`)
-        console.log(response)
         setExpenses(response.data)
       } catch (err) {
         setError(err.message)
